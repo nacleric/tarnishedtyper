@@ -15,9 +15,10 @@ html {
     color: rgba(189, 190, 142, 0.495)
 }
 
-/* .letter-block {
-    background-color: white;
-} */
+.starting-letter-block {
+    background-color: rgb(66, 70, 144);
+    animation: blink 1.5s infinite;
+}
 
 .letter-block {
     background-color: rgb(66, 70, 144);
@@ -34,4 +35,16 @@ html {
 
 .letter-wrong {
     color: rgb(139,70,63);
+}
+
+@keyframes blink {
+    0% {
+        background-color: rgb(66, 70, 144);
+    }
+    50% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: rgb(66, 70, 144);
+    }
 }

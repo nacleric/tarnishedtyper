@@ -10,49 +10,54 @@ function wrapLettersInSpan(str) {
     return result;
 }
 
-fetch("redditpost.json")
-    .then(response => response.json())
-    .then(data => {
-        console.log(data)
-    })
+function main() {
+    fetch("redditpost.json")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
 
 
-let count = 0
-let sentence = "The jars collect bodies (and souls probably) to dump at the roots of the trees to feed the trees"
-let total_words = sentence.split(' ').filter(word => word.length > 0).length
+    let count = 0
+    let sentence = "The jars collect bodies (and souls probably) to dump at the roots of the trees to feed the trees"
+    let total_words = sentence.split(' ').filter(word => word.length > 0).length
 
-let game = document.getElementById("game")
-game.innerHTML = wrapLettersInSpan(sentence)
+    let game = document.getElementById("game")
+    game.innerHTML = wrapLettersInSpan(sentence)
 
-let letterNode = game.childNodes
-letterNode[count].classList.add("letter-block")
+    let letterNode = game.childNodes
+    letterNode[count].classList.add("starting-letter-block")
 
-document.addEventListener('keydown', function (event) {
-    let key = event.key
-    // Regular expression to detect letters, numbers, punctuation, and special characters
-    if (/^[a-zA-Z0-9!@#$%^&*()e_+\-=\[\]{};':"\\|,.<>\/?~` ]$/.test(key)) {
+    document.addEventListener('keydown', function (event) {
+        let key = event.key
 
-        if (letterNode[count].innerHTML === " " && key !== " ") {
-            // letterNode[count].className = "letter-correct"
-            console.log("pog")
-            letterNode[count].className = "letter-block-wrong"
-        } else if (key === letterNode[count].innerHTML) {
-            letterNode[count].className = "letter-correct"
-        } else {
-            letterNode[count].className = "letter-wrong"
+        // Regular expression to detect letters, numbers, punctuation, and special characters
+        if (/^[a-zA-Z0-9!@#$%^&*()e_+\-=\[\]{};':"\\|,.<>\/?~` ]$/.test(key)) {
+
+            if (letterNode[count].innerHTML === " " && key !== " ") {
+                // letterNode[count].className = "letter-correct"
+                console.log("pog")
+                letterNode[count].className = "letter-block-wrong"
+            } else if (key === letterNode[count].innerHTML) {
+                letterNode[count].className = "letter-correct"
+            } else {
+                letterNode[count].className = "letter-wrong"
+            }
+            count += 1
         }
-        count += 1
-    }
 
-    // detect backspace
-    if (event.keyCode === 8) {
-        if (count !== 0) {
-            count -= 1
+        // detect backspace
+        if (event.keyCode === 8) {
+            if (count !== 0) {
+                count -= 1
+            }
+            letterNode[count].className = ""
+            letterNode[count + 1].classList.remove("letter-block")
         }
-        letterNode[count].className = ""
-        letterNode[count+1].classList.remove("letter-block")
-    }
 
-    letterNode[count].classList.add("letter-block")
+        letterNode[count].classList.add("letter-block")
+    });
 
-});
+}
+
+main()
