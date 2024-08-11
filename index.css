@@ -1,0 +1,35 @@
+html {
+    background-color: rgb(12,23,15);
+}
+
+.title {
+    color: rgba(230, 209, 102, 0.9);
+    font-size: 3rem;
+    font-family: "EB Garamond", serif;
+}
+
+#game {
+    font-family: "Noto Sans Mono", monospace;
+
+    font-size: 2rem;
+    color: rgba(189, 190, 142, 0.495)
+}
+
+/* .letter-block {
+    background-color: white;
+} */
+
+.letter-block {
+    background-color: rgb(40, 43, 87);
+}
+
+.letter-correct {
+    /* color: rgb(163,166,74); */
+    color: rgb(230,209,102);
+
+
+}
+
+.letter-wrong {
+    color: rgb(139,70,63);
+}
