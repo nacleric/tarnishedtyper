@@ -29,11 +29,14 @@ letterNode[count].classList.add("letter-block")
 
 document.addEventListener('keydown', function (event) {
     let key = event.key
-
-
     // Regular expression to detect letters, numbers, punctuation, and special characters
     if (/^[a-zA-Z0-9!@#$%^&*()e_+\-=\[\]{};':"\\|,.<>\/?~` ]$/.test(key)) {
-        if (key === letterNode[count].innerHTML) {
+
+        if (letterNode[count].innerHTML === " " && key !== " ") {
+            // letterNode[count].className = "letter-correct"
+            console.log("pog")
+            letterNode[count].className = "letter-block-wrong"
+        } else if (key === letterNode[count].innerHTML) {
             letterNode[count].className = "letter-correct"
         } else {
             letterNode[count].className = "letter-wrong"

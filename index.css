@@ -20,14 +20,16 @@ html {
 } */
 
 .letter-block {
-    background-color: rgb(40, 43, 87);
+    background-color: rgb(66, 70, 144);
+}
+
+.letter-block-wrong {
+    background-color: rgb(139,70,63);
 }
 
 .letter-correct {
     /* color: rgb(163,166,74); */
     color: rgb(230,209,102);
-
-
 }
 
 .letter-wrong {
