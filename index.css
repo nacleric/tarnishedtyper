@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(12,23,15);
+    background-color: rgb(12, 23, 15);
 }
 
 .title {
@@ -8,11 +8,27 @@ html {
     font-family: "EB Garamond", serif;
 }
 
+.game-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: right;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 1.5rem;
+    color: rgba(189, 190, 142, 0.495);
+    margin-bottom: 1rem;
+
+}
+
 #game {
     font-family: "Noto Sans Mono", monospace;
-
     font-size: 2rem;
-    color: rgba(189, 190, 142, 0.495)
+    color: rgba(189, 190, 142, 0.495);
+
 }
 
 .starting-letter-block {
@@ -25,26 +41,37 @@ html {
 }
 
 .letter-block-wrong {
-    background-color: rgb(139,70,63);
+    background-color: rgb(139, 70, 63);
 }
 
 .letter-correct {
     /* color: rgb(163,166,74); */
-    color: rgb(230,209,102);
+    color: rgb(230, 209, 102);
 }
 
 .letter-wrong {
-    color: rgb(139,70,63);
+    color: rgb(139, 70, 63);
 }
 
 @keyframes blink {
     0% {
         background-color: rgb(66, 70, 144);
     }
+
     50% {
         background-color: transparent;
     }
+
     100% {
         background-color: rgb(66, 70, 144);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    /* CSS rules for phone screens go here */
+    .game-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%
     }
 }
