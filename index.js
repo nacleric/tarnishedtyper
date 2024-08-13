@@ -1,4 +1,4 @@
-let TIMER = 5
+let TIMER = 30
 
 let states = {
     PAUSE: "PAUSE",
@@ -67,9 +67,23 @@ async function main() {
     document.addEventListener('keydown', function (event) {
         let key = event.key
 
+        console.log(event.keyCode)
+        console.log(key)
+
+        // Stops space from scrolling
+        if (event.keyCode === 32 && event.target === document.body) {
+            event.preventDefault();
+        }
+
+        // Stops tab from selecting off screen
+        if (event.keyCode === 9 && event.target === document.body) {
+            event.preventDefault();
+        }
+
         if (GAMESTATE.timeLeft > 0 && GAMESTATE.currentState === states.PAUSE) {
             GAMESTATE.currentState = states.INPROGRESS
         }
+
         if (GAMESTATE.currentState === states.INPROGRESS) {
             // Regular expression to detect letters, numbers, punctuation, and special characters
             if (/^[a-zA-Z0-9!@#$%^&*()e_+\-=\[\]{};':"\\|,.<>\/?~` ]$/.test(key)) {
@@ -95,7 +109,7 @@ async function main() {
         }
 
         if (GAMESTATE.currentState === states.PAUSE && event.keyCode === 13) {
-            GAMESTATE.timeLeft = 5
+            GAMESTATE.timeLeft = TIMER
             sentence = newSentence(redditPostsResponse)
             renderGame(sentence, game)
         }

@@ -1,17 +1,142 @@
 [
     {
-        "author": "redditor1",
-        "text": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
-        "tags": ["fia"]
+        "id": 1,
+        "author": "YongYoKyo",
+        "link": "https://www.reddit.com/r/Eldenring/comments/t9tzfq/comment/hzwmq6o/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "Albinaurics are not the product of the Academy of Raya Lucaria. If I recall, Thops has dialogue that says that the Albinaurics are the accursed souls born from a forbidden rite of the Eternal City. They were cursed so that the olds' legs would wither and the Frogs' tongues would silence. Along with all of the items that describe how the Albinaurics were born from a sacred drop of dew, the emphasis on ripples, and their silver theme (blue silver is said to be a type of metal born from the same mother as the Albinaurics); the Albinaurics are probably an off-shoot of the Silver Tears (specifically, the ones that take human forms). Another point of correlation is that the \"Silver Tear Mask\" greatly increases Arcane, which is apparently an important stat for Albinaurics, as all of their weapons (including their glintstone staff) scale with Arcane.Since they were artificially-created, they are not life native to the Erdtree, so they are not graced by the Erdtree. As we know, grace is important, which is why the Albinaurics are spurned. This caused them to seek salvation in another tree, Miquella's Haligtree, which they believe to be their promised lands.",
+        "tags": ["albinauric"]
     },
     {
-        "author": "redditor2",
-        "text": "If I have seen further it is by standing on the shoulders of Giants.",
-        "tags": ["albinaurich"]
+        "id": 2,
+        "author": "krawinoff",
+        "link": "https://www.reddit.com/r/Eldenring/comments/16yp9w8/comment/k39rf7u/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "I think it's a combination of two things, his actual behavior and what the GO thinks of him. While his most notable action is slandering the nomads, causing their imprisonment in basically a death pit, we also see him lie and trick other people, like Vyke and our character, there's a large possibility he did that way more times than just what the game tells us. He does this because the despair it brings pushes its victims towards madness and the Flame of Frenzy that governs it, thus making him a massive thorn in Golden Order's side. So the general population has reasons to hate him and the GO has reasons to label him a literal hellspawn that he is. Plus he probably predates Dung Eater by a huge margin of time and has way more victims (at least in-game by scale we see way more nomads and frenzied people compared to like 7 people with seedbed curses) so he had more time and reason to go down in history. He's also the most hated man, I think it means just male, so Fia could be hated more, although I think Daedicar is actually meant to take that position as the most hated woman. A lot of villains also just have their real identity unknown, so Ranni, black knives and Mohg can't really be the most hated.",
+        "tags": ["shabriri", "merchants"]
     },
     {
-        "author": "redditor3",
-        "text": "Do or do not, there is no try.",
+        "id": 3,
+        "author": "The_PracticalOne",
+        "link": "https://www.reddit.com/r/Eldenring/comments/10dp3cz/comment/j4o2ky4/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "Basically, the three fingers want the death of everything, which is pretty evil. Lore summary of the three fingers: Those Merchants you meet everywhere? They used to be a part of a great caravan of thousands of Merchants. The golden order accused them of heresy and buried them alive under Leyndall. At least a few dying merchants collectively decided, that if they were going to be damned for heresy, they may as well do the crime they were accused of. So they prayed to any being that would hear them, and asked for revenge. The frenzied flame answered. The flame's ultimate goal is to take life back to it's primordial form, where nothing was separate. A primordial cauldron of life energy, that has not separated into different life forms with separate wills. You know, the force, but not in Star Wars. To do this, it tries to exterminate all life. In doing so, all the energy life consumes to live will go back to being in one place, presumably. However, while that's the Flame's goal, no one in game actually seems to align with said goal. Every single NPC you meet that wants the flame, wants it to get revenge. They do not care about becoming one with the Elden Ring equivalent of the force. Not that the flame cares why they want to worship it. You may notice that I refer to the flame, and not the three fingers itself. That's because, unlike the greater will and the golden order, we don't actually know how the hierarchy of the flame works. Therefore, we aren't really sure if the three fingers caused the flame, is the flame itself, or if it serves a similar purpose to the two fingers, where it is just an emissary. There's hints that the real flame is in that underground chapel in Leyndall. But they're just that. Hints. Pretty bare hints at that. We don't know for sure either way. The flame seems to \"infect\" for lack of a better word, anyone that has fallen into pure despair. Which is why you see it in a lot of areas with no real connection to each other, beyond the suffering of the inhabitants. Like on the battlefield that was Mt. Gleinor and volcano manor, where you get to see the horrors of the battle there. It also seems to be really good at driving people mad with knowledge too great for most people to know. There's a whole ass quest about this happening to a \"maiden\". To the point where you'll see the eyes of infected turn yellow, and eventually fall out to be replaced by pockets of frenzy flame instead. With those eyes becoming those embers you can pick up along the ground. Even Gideon the all knowing bastard is more susceptible to frenzy damage, because he's already on the cusp of going mad when you face him. What about the two fingers? They serve the greater will and the golden order, which manifests it's influence in the form of the erdtree and the elden ring, of which, Marika was queen and steward basically. The greater will may or may not have the lands between's best interests at heart, but unlike every other outer god, or greater force at work in the setting, it seems to at least not cause direct harm. Which makes it unique in elden ring, as even the glintstones are shown to crystalize everything around themselves, despite being otherwise indifferent. The two fingers have done a lot of questionable shit, including genocide, especially of anything that worships any type of fire. Because shock of shocks, big trees and fire don't get along. However, they're one of the few outside forces that has an order that is actually stable. Unlike say, the scarlet rot god, the formless mother, the star aliens, and all the other terrifying stuff that basically wants to destroy the lands between as we know it.",
+        "tags": ["three_fingers", "merchants", "frenzied_flame"]
+    },
+    {
+        "id": 4,
+        "author": "Elden Ring Wiki",
+        "link": "https://eldenring.fandom.com/wiki/Golden_Order",
+        "text": "The Golden Order is the dominant set of beliefs in the Lands Between. The greatest symbols of this faith are the Elden Ring, the Erdtree, and Queen Marika the Eternal. The Golden Order was initially created when Queen Marika the Eternal confined the Rune of Death, making herself and her demigod offspring immortal. It is founded on the principle that Marika is the one true god, and is propagated by the Two Fingers. The Golden Order serves simultaneously as a governing principle, a religion, and a philosophy. It is shown to be capable of integrating conflicting ideologies and practices, as demonstrated by its absorption of Glintstone sorcery, and dragon worship (which was said not to conflict with belief in the Erdtree as the dragons' lightning was imbued with gold). Concepts that threaten to shatter the Order entirely, such as life in death, are labelled as heresy and are violently persecuted by the Golden Order.",
+        "tags": ["golden_order"]
+    },
+    {
+        "id": 5,
+        "author": "tthe_walruss",
+        "link": "https://www.reddit.com/r/Eldenring/comments/103krmf/comment/j32c106/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "We know the Omen horns were once considered a blessing because they're related to the Crucible, but are now considered a curse. One of the weirder outer gods, the Formless Mother, who is said to \"crave wounds\" can make use of the omens' accursed blood. The Dung Eater thinks of himself as an omen and wears a suit of cut off omen horns. This has led a lot of folks to speculate that omen are born of defiled, cursed souls, and that the Dung Eater's goal is to create as many omen as possible. Exactly what causes the omen is unknown, but they are absolutely hated by the Golden Order. Common-born omen have their horns cut off, which usually lead to their deaths. Noble born omen are kept hidden away, often in the Leyndell sewers. They are hunted by omenkillers even if they manage to survive. Unclear whether it's the same thing at all but the ancestral followers revered beasts who \"bud\" with horns, believing long-lived beasts who budded enough would one day become ancestral spirits.",
+        "tags": ["omens, dung_eater"]
+    },
+    {
+        "id": 6,
+        "author": "Maximum_Poet_8661",
+        "link": "https://www.reddit.com/r/Eldenring/comments/yhc80e/comment/iudks9c/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "The Golden Order was the era that formed after Marika took the Rune of Death out of the Elden Ring, (ideally) removing death from the Lands Between. But it had a lot of bad side effects, like people who now literally can't die but they're not really alive either, just skeletons stagnating forever. Bc of Marikas removing the rune of death, anything death related is heretical to the Golden Order. The man she killed is a Golden Order hunter who was charged with hunting down and eliminating Those Who Live In Death. Fia is a sympathizer with the death related people in the Lands Between, and this Hunter sees her as a heretic to be eliminated so she killed him before he could kill her",
+        "tags": ["fia", "d", "twlid"]
+    },
+    {
+        "id": 7,
+        "author": "RowanIsBae",
+        "link": "https://www.reddit.com/r/Eldenring/comments/tsbk00/comment/i2qnyj1/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "It's a way of viewing life as a never-ending journey rather than something that you are born into and then die and leave behind. Fia wants the persecution of the undead to stop and her ending makes it so that everyone lives a brief life and then continues on as undead unless slain some other way. I'm going to presume that undead created with that ending in the future (or certain undead, such as tarnished and gods) retain some kind of sentience whereas the undead we kill now are mostly mindless. Maybe that's a reflection of the prince of death having no soul. As for why the golden order hates them, it's because order and control are the driving factors of the greater will. The greater will itself is a type of alien parasite that does not want people to die and continue living in undeath. It gains its energy from people being placed inside of its tree root system and sucking them dry. So when the undead appear, the golden order stamps them out as abnormal beings probably completely unaware they are being influenced to do so by the greater will not wanting it's primary food sources to be no longer available. Order and control are what the greater will is about because it uses that order and control to direct people to put themselves/others while alive into the tree roots and be consumed, supposedly returning them to the tree to be reborn but I have to imagine that's just a tale of the faith because they don't know any wiser and we've never seen indication that proves someone was reborn such as retaining any memories or something. No different than religious people today that believe in reincarnation.",
+        "tags": ["fia", "golden_order", "twlid"]
+    },
+    {
+        "id": 8,
+        "author": "govlum_1996",
+        "link": "https://www.reddit.com/r/Eldenring/comments/112puz0/comment/j8lmrjj/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "They weren't trying to take over the Minor Erdtrees. They were feeding the Minor Erdtrees with corpses, thus allowing them to grow. The Erdtree Avatars would smash the jars when they arrived at the Erdtrees, releasing the flesh stored within so that the Minor Erdtrees would be able to grow. Remember that you also see these Living Jars predominantly in Catacombs. Why is that? Because they were transporting the flesh of dead corpses to the Catacombs for Erdtree Burial. It seems that their function was similar here, at the Minor Erdtrees... once they were filled to the brim with dead corpses they would go to the Minor Erdtrees to nourish them as well. We also see Alexander stuffing himself with the bodies of dead soldiers as well.",
+        "tags": ["jars", "erdtree"]
+    },
+    {
+        "id": 9,
+        "author": "domewebs",
+        "link": "https://www.reddit.com/r/Eldenring/comments/112puz0/comment/j8o8rhn/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "A little thing I noticed, that I haven't seen anyone else mention… in the catacombs under Leyndell with all the forsaken Merchants, the jars are roped shut, as if to forcibly prevent the dead/dying/Frenzied Merchants from passing on via Erdtree burial. I fucking love this game",
+        "tags": ["jars", "merchants"]
+    },
+    {
+        "id": 10,
+        "author": "GarlVinland4Astrea",
+        "link": "https://www.reddit.com/r/Eldenring/comments/108uipj/comment/j3uvbeu/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "The spirits nearby and some of the items imply that they are sacrificing people to the Godskin Apostle who set up shop there. It's really just meant to show how one small little town was screwed up by the shattering in a way that isn't related to the demigods. Normally the god-killers would not have been allowed to influence an area run by the demi-gods because, well, they're trying to kill demi-gods. But after the shattering the demi-gods kinda lost control over things so it was made possible.",
+        "tags": ["godskin", "shattering"]
+    },
+    {
+        "id": 11,
+        "author": "Revolutionary-Today1",
+        "link": "https://www.reddit.com/r/Eldenring/comments/worfdp/comment/ikckyh1/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "My basic understanding is that he was a tarnished who successfully acquired a number of great runes and faced essentially the same choice the PC faces on how to burn the erdtree and the fact that he would have to allow his maiden to sacrifice herself in order to do so. It seems that he was also approached by Shabriri and offered the same offer that the PC is offered to embrace the three fingers and avoid sacrificing his maiden . He chose this option and was corrupted and driven insane .",
         "tags": ["vyke"]
+    },
+    {
+        "id": 12,
+        "author": "secrecy274",
+        "link": "https://www.reddit.com/r/Eldenring/comments/tce83z/comment/i0cvukg/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "Hyetta explains it to you if you follow her questline. In essence: The Frenzied Flame is the end of all creation. According to the Three Fingers, all originated from the flame, but existance is an mistake, and its goal is to reinstate the natural order of things, by burning all of creation. All came from the flame, all shall go to the flame. By shouldering the Frenzied Flame and becoming the Lord of Chaos, you're practically stating that your goal is now to destroy the world, which goes against Melina's purpose. That's why she leaves you.",
+        "tags": ["melina", "hyetta", "frenzied_flame"]
+    },
+    {
+        "id": 13,
+        "author": "Inevitable-Season-62",
+        "link": "https://www.reddit.com/r/Eldenring/comments/xtr36e/shabriri_grapes_hyetta_lore_is_dark/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "Shabriri grapes are, of course, eyes. Hyetta is looking for Shabriri grapes on her quest to become a finger maiden. In part of her quest, she mentions that others have given her grapes, and she mentions the noises that they make when they give them to her. I assume that she is referring to other tarnished who have torn out their own eyes, most likely in the hope of Hyetta becoming their finger maiden so that they can escape this endless cycle of life and death in the Lands Between by obtaining a finger maiden and the benefits it confers - e.g. turning strength into runes. This gives some idea of the anguish that most tarnished must experience in this endless cycle where there is no destined death. They're willing to tear out their own eyes and give them to a seemlingly mad lady on a quest on a slim chance that it might lead them to a better place. That's pretty dark.",
+        "tags": ["shabriri", "hyetta"]
+    },
+    {
+        "id": 14,
+        "author": "Quantum_Croissant",
+        "link": "https://www.reddit.com/r/Eldenring/comments/zjyqre/comment/izwve4n/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "He's a child of Marika and Godfrey, and Morgotts brother, who he was locked away in the subterranean shunning grounds with. At some point, probably after the Shattering, he got out and started his own little cult, the Bloody Fingers. He worshipped the Formless Mother, an outer god, and got his blood powers from her. Seems like the Bloody Fingers are just being evil and murdering people, as well as recruiting tarnished, like varre does. But they're also gathering offerings of blood for Mohg, because he's got a plan. He wants to gain power over the Elden ring and make the Formless Mother the big god, so to do that he kidnapped Miquella while he was in a cocoon, so that when he hatches Mohg can become his consort and so use Miquellas empyrean powers to make him the vessel of the Elden Ring, and Mohg Elden Lord",
+        "tags": ["mohg", "demi_gods"]
+    },
+    {
+        "id": 15,
+        "author": "spacy1993",
+        "link": "https://www.reddit.com/r/Eldenring/comments/tl6l39/comment/i1u07b7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "It's very complicated. Marika breaks the Elden Ring, so Greater Will call Radagon back to repair the ring. We can assume that at some point, Marika is split into 2 being, now once again merged back into one. My interpretation is: Radagon is Greater Will manifestation onto Marika. Marika marriage with Godfrey gives birth to 3 children: Godwyn, Morgott and Mogh with later 2 being borned as Omen. At the same time, Godfrey losing his golden eye color, meaning he is no longer being embraced by Grace. Thus leading to the separation with Godfrey. It's either him losing Grace leading to defective children, or creating defective children leading him to lose his Grace. Due to Godfrey being banished, Radagon is called back. But before that we have Rennala, another one worthy of being called a champion. Then Radagon leading Golden Order to fight with Rennala. However, Radagon falling in love with her, the two gives birth to: Ranni, Rykard, Radahn. These 3 are perfectly healthy. If anything, I believe the Greater Will want to create new, perfect god, someone like Marika herself. (Let's remember that Marika origins is Numen and eventually ascend to godhood. With Godfrey out of picture, and project healthy children perhaps is already successful with Renala, Great Will might like: hey, let's try new method in making children. This new marriage between Radagon/Marika gives birth to: Miquella, Malenia. But both have defect since birth. After a while, Godwyn is killed. Marika, perhaps out of grief, shatter the ring, slowly turning the world into big mess. Radagon is like the loyal personality, faithful to Golden Order, attempt to repair the ring. But various Rune already being held by the Demi God Children. They needs more part to repair the Ring. The Greater Will requires those Rune to start fixing Elden Ring project. And for some reason, from the Greater Will, gameplay perspective, they thinks that only 2 more runes to fix the Elden Ring. You only need 2 rune to enter the capital. Marika also established The Round Table Hold as a force to retake those Rune, but she has other plans: To make the Tarnished force forever unable to success (Revealed by Gideon) To make Hewn, blacksmith, promise to craft weapon that can slay god.The Erdtree deny passage perhaps is because it partially being controlled by Marika, she want to keep the world as it is: Broken, godless, no more outer force influence. Radagon want to repair the ring, but Greater Will might not actually want a Tarnish to becomes Elden Lord. I think Radagon fight us to take our Rune and refuse to give our Tarnish the promised Elden Lord throne. Basically, she want us to never success, and in case if we did, we would have weapon strong enough to slay the god (the Elden Beast) And depends on the method we use to mend the Elden Ring, new rule being introduced into Golden Order (Like Fia's death rune, Gold Mask perfection etc...). Or as in Ranni ending: She promise a new world without outer god influence, then hence Marika peacefully disappear (?), shattering the Elden Ring once and for all.",
+        "tags": ["marika", "golden_order", "demi_gods"]
+    },
+    {
+        "id": 16,
+        "author": "Kasta4",
+        "link": "https://www.reddit.com/r/Eldenring/comments/18zzssb/comment/kgky4vr/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "There are various item descriptions in-game that talk of Godfrey's lore and his place in it. Basically, Godfrey (Hoarah Loux) was a battle-hungry warrior that Marika tempted to join her and the Erdtree as her husband and therefore become Elden Lord. Although it's not exactly clear when, Godfrey defeated the Regent Beast Lord Serrosh (the ethereal lion you see on his back) and took up Serrosh's weapon as a symbol of the former's might and his right to rule. Serrosh became one of Godfrey's counsel, and bound himself to the Elden Lord's body to keep the warrior's bloodlust in check. With Godfrey acting more as a King than a warrior, and with the previous royalty out of the way, he and Marika used the power of the Elden Ring to promote the growth of the Erdtree, and Godfrey as her Elden Lord defeated nearly every single enemy of the Erdtree to usher in an age of it's bounty.Godfrey and his army would not celebrate however. Marika removed the Grace of Gold from the Lord and his army the very second the last enemy of the Erdtree fell, and Godfrey began his Long March to the sea with his Tarnished army to be banished- one day answering the call to return to The Lands Between (when we start the game). If you want more comprehensive lore on Godfrey I highly recommend Tarnished Archaeologist's YouTube video on him. In it, the Tarnished Archaeologist draws obvious parallels to Godfrey and the real world Aurthurian legends that inspired the character, his followers, and the idea of the Round Table Hold.",
+        "tags": ["godfrey", "marika", "demi_gods"]
+    },
+    {
+        "id": 17,
+        "author": "Modfull_X",
+        "link": "https://www.reddit.com/r/Eldenring/comments/zu14pu/comment/j1gjii2/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "tarnished are descendants of godfrey's tribe of humans that served marika and the golden order long ago, the reason they are called tarnished is because they WERE part of the golden order but then banished from the order thus tarnishing their reputation, they had their grace removed and they all left the lands between, a lot of them went to the badlnds to fight and died with godfrey, but some went to other continents and started families, not all of the tarnished we meet in game were actually alive 5000 years prior to the game. the hoslows are just one instance of a tarnished bloodline that proves this",
+        "tags": ["tarnished", "godfrey"]
+    },
+    {
+        "id": 18,
+        "author": "motv8r",
+        "link": "https://www.reddit.com/r/Eldenring/comments/tzcfku/comment/i3y6a1f/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "Blocking out the influence of other outer gods is most likely in an attempt to secure the lands between. This allows for greater control over the land and protection for itself. The giants were slain in order to snuff out the flame of ruin, which is capable of burning the erdtree. This is evidence of the greater will attempting to remove threats to itself. Therefore the golden order and the erdtree is meant to protect and secure the influence / control of the greater will.",
+        "tags": ["erdtree", "giants"]
+    },
+    {
+        "id": 19,
+        "author": "Elden Ring Wiki",
+        "link": "https://eldenring.fandom.com/wiki/Fire_Giant",
+        "text": "In the days before the Erdtree, the Giants carved out a civilization in the inhospitable mountains to the north, after chasing away the Ice Dragons who had previously ruled it. Here, they worshipped a Fell God and were bound to tend the flame of their god for eternity. When Queen Marika the Eternal ushered in her Age of the Erdtree, she had her then husband, Godfrey, the first Elden Lord, launch an attack against the giants, fearing that their fire might burn her Erdtree. The mighty giants borrowed the power of their Fell God, but were still defeated by Godfrey and his crucible knights, with Marika allegedly striking down the Fell God. Only a single Fire Giant remained, and Marika cursed him to forever tend his flame, ensuring it could not harm her Erdtree. During this time, the Fire Giant crafted a leg brace for a wound on his left leg.",
+        "tags": ["giants", "erdtree"]
+    },
+    {
+        "id": 20,
+        "author": "RSnA_ds",
+        "link": "https://www.reddit.com/r/Eldenring/comments/u87474/comment/i5kutml/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+        "text": "The Ancient Dragons ruled the prehistoric era before the Erdtree. And they would protect their Dragonlord as a wall of living rock. Dragonlord Placidusax lies at the heart of the storm beyond time and he ruled over the Ancient Dragons during the Age before the Erdtree. But once his \"god\" had fled he continued to await its return and he dwelled eternal beyond time. It seems like when Placidusax was in stasis after he's god had fled, the Golden Order started to rise up during this period. And the rule of the Ancient Dragons was being contested. So Gransax attacked the Capital and thus began the War against the Ancient Dragons. Which eventually ended after Fortissax (who was called the mightiest boulderstone of the Ancient Dragons) was defeated and befriended by Godwyn the Golden. After Gransax attacked the Capital, the Tree Sentinels and some of the Knights of the Erdtree started worshiping the Ancient Dragons. The Dragon Cult became a second religion within Leyndell. And after Godwyn made peace with the Dragons, Lansseax (Fortissax's sister) became a priestess of the Dragon Cult and communed with knights like Vyke the Dragonspear. Btw the Ancient Dragons can take the form of a human and they interbred with the humans and produced the short-lived Draconians (a race you can pick as a preset). There's also the Dragon Communion (an offshoot of the Dragon Cult) which hunted the modern Dragons to consume their heart and receive their powers. Some of them turned into Magma Wyrms. Greyoll (the big dragon in Caelid) is the mother of all the mortal/modern dragons like Agheel, Adula, Smarag, etc. But immortal Stone Dragons like Placidusax and Lansseax are far more ancient. There are two types of Dragons, the Ancient Dragons and the Mortal Dragons. The Ancient Dragons have gravel stone skin, 2 sets of wings and can wield red lightning while the modern dragons have flesh, blood and only one pair of wings but they have more affinities to natural elements as a result of them adapting to the Lands Between. Examples of which are Borealis and the Ice Dragons that ruled the Mountaintops before the Fire Giants, there's also Ekzykes with the Scarlet Rot, and the Glintstone Dragons, Smarag and Adula. The Mortal Dragons and Greyoll are descendants of the Ancient Dragons but they are far weaker and vulnerable than the Ancient Dragons.",
+        "tags": ["dragons", "erdtree"]
     }
 ]
