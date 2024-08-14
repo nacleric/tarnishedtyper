@@ -42,8 +42,8 @@ function renderGame(sentence, gameEl) {
 }
 
 async function main() {
-    let redditPostsResponse = await fetchData();
-    let sentence = newSentence(redditPostsResponse)
+    let redditPosts = await fetchData();
+    let sentence = newSentence(redditPosts)
 
     // let total_words = sentence.split(' ').filter(word => word.length > 0).length
 
@@ -110,7 +110,7 @@ async function main() {
 
         if (GAMESTATE.currentState === states.PAUSE && event.keyCode === 13) {
             GAMESTATE.timeLeft = TIMER
-            sentence = newSentence(redditPostsResponse)
+            sentence = newSentence(redditPosts)
             renderGame(sentence, game)
         }
     });
