@@ -75,3 +75,14 @@ html {
         margin-top: 10%
     }
 }
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fuzzy-search-bar {
+    width: 60%;
+
+}

@@ -67,9 +67,6 @@ async function main() {
     document.addEventListener('keydown', function (event) {
         let key = event.key
 
-        console.log(event.keyCode)
-        console.log(key)
-
         // Stops space from scrolling
         if (event.keyCode === 32 && event.target === document.body) {
             event.preventDefault();

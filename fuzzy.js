@@ -4,25 +4,25 @@ async function fetchData() {
 }
 
 function createCache(redditposts) {
-    let fuzzySearchCache = {}
+    let cache = {}
 
     for (let i = 0; i < redditposts.length; i++) {
         post = redditposts[i]
         post.tags.forEach(tag => {
-            fuzzySearchCache[tag] = []
+            cache[tag] = []
         });
     }
 
-    for (let index in fuzzySearchCache) {
+    for (let index in cache) {
         for (let i = 0; i < redditposts.length; i++) {
             post = redditposts[i]
             if (post.tags.includes(index)) {
-                fuzzySearchCache[index].push(post.id)
+                cache[index].push(post.id)
             }
         }
     }
 
-    return fuzzySearchCache
+    return cache
 }
 
 function queryResults(redditposts, cache, tag) {
@@ -36,12 +36,22 @@ function queryResults(redditposts, cache, tag) {
     return results
 }
 
+function fuzzySearch(query, items) {
+    const queryLower = query.toLowerCase();
+    let foo = Object.keys(items).filter(item => item.toLowerCase().includes(queryLower));
+    return foo
+}
+
 async function main() {
     let redditposts = await fetchData();
-    let fuzzySearchCache = createCache(redditposts)
-    let results = queryResults(redditposts, fuzzySearchCache, "fia")
-    console.log(fuzzySearchCache)
-    console.log(results)
+    let cache = createCache(redditposts)
+    let results = queryResults(redditposts, cache, "fia")
+    // console.log(cache)
+    // console.log(results)
+    // cache.forEach(i => {console.log(i)})
+    console.log(fuzzySearch("a", cache))
 }
+
+
 
 main()
