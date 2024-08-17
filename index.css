@@ -24,6 +24,11 @@ html {
 
 }
 
+.divider {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #game {
     font-family: "Noto Sans Mono", monospace;
     font-size: 2rem;
@@ -47,6 +52,7 @@ html {
 .letter-correct {
     /* color: rgb(163,166,74); */
     color: rgb(230, 209, 102);
+    text-shadow: rgb(255, 132, 0) 1px 0 10px;
 }
 
 .letter-wrong {

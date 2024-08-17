@@ -8,6 +8,7 @@ let states = {
 let GAMESTATE = {
     count: 0,
     timeLeft: TIMER,
+    keyFired: false,
     currentState: states.PAUSE
 }
 
@@ -51,14 +52,6 @@ async function main() {
 
     let game = document.getElementById("game")
 
-    setInterval(() => {
-        GAMESTATE.timeLeft--;
-        timerEl.textContent = GAMESTATE.timeLeft;
-        if (GAMESTATE.timeLeft <= 0) {
-            timerEl.textContent = "Done";
-            GAMESTATE.currentState = states.PAUSE
-        }
-    }, 1000)
     game.innerHTML = wrapLettersInSpan(sentence)
 
     let letterNode = game.childNodes
@@ -67,9 +60,17 @@ async function main() {
     document.addEventListener('keydown', function (event) {
         let key = event.key
 
-        console.log(event.keyCode)
-        console.log(key)
-
+        if (GAMESTATE.currentState === states.INPROGRESS && GAMESTATE.keyFired === false) {
+            GAMESTATE.keyFired = true
+            setInterval(() => {
+                GAMESTATE.timeLeft--;
+                timerEl.textContent = GAMESTATE.timeLeft;
+                if (GAMESTATE.timeLeft <= 0) {
+                    timerEl.textContent = "Done";
+                    GAMESTATE.currentState = states.PAUSE
+                }
+            }, 1000)
+        }
         // Stops space from scrolling
         if (event.keyCode === 32 && event.target === document.body) {
             event.preventDefault();
