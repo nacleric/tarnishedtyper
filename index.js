@@ -1,4 +1,5 @@
 let TIMER = 5
+let timerInterval;
 
 let states = {
     START: "START",
@@ -63,13 +64,19 @@ async function main() {
         let key = event.key
 
         // Start timer
-        if (GAMESTATE.currentState !== states.INPROGRESS && GAMESTATE.keyFired === false) {
+        if (GAMESTATE.currentState !== states.INPROGRESS && GAMESTATE.keyFired === false && event.keyCode !== 9) {
             GAMESTATE.keyFired = true
             GAMESTATE.currentState = states.INPROGRESS
-            setInterval(() => {
+
+            // Clear any existing interval
+            if (timerInterval) {
+                clearInterval(timerInterval);
+            }
+            timerInterval = setInterval(() => {
                 GAMESTATE.timeLeft--;
                 timerEl.textContent = GAMESTATE.timeLeft;
                 if (GAMESTATE.timeLeft <= 0) {
+                    clearInterval(timerInterval) // stops timer
                     timerEl.textContent = "Done";
                     GAMESTATE.currentState = states.START
                 }
