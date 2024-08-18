@@ -1,7 +1,7 @@
-let TIMER = 30
+let TIMER = 5
 
 let states = {
-    PAUSE: "PAUSE",
+    START: "START",
     INPROGRESS: "INPROGRESS",
 }
 
@@ -9,7 +9,7 @@ let GAMESTATE = {
     count: 0,
     timeLeft: TIMER,
     keyFired: false,
-    currentState: states.PAUSE
+    currentState: states.START
 }
 
 function wrapLettersInSpan(str) {
@@ -36,8 +36,10 @@ function newSentence(redditPosts) {
 
 function renderGame(sentence, gameEl) {
     gameEl.innerHTML = wrapLettersInSpan(sentence)
+    GAMESTATE.timeLeft = TIMER
+    GAMESTATE.keyFired = false
     GAMESTATE.count = 0
-    GAMESTATE.currentState = states.PAUSE
+    GAMESTATE.currentState = states.START
     let letterNode = gameEl.childNodes
     letterNode[0].classList.add("starting-letter-block")
 }
@@ -60,29 +62,18 @@ async function main() {
     document.addEventListener('keydown', function (event) {
         let key = event.key
 
-        if (GAMESTATE.currentState === states.INPROGRESS && GAMESTATE.keyFired === false) {
+        // Start timer
+        if (GAMESTATE.currentState !== states.INPROGRESS && GAMESTATE.keyFired === false) {
             GAMESTATE.keyFired = true
+            GAMESTATE.currentState = states.INPROGRESS
             setInterval(() => {
                 GAMESTATE.timeLeft--;
                 timerEl.textContent = GAMESTATE.timeLeft;
                 if (GAMESTATE.timeLeft <= 0) {
                     timerEl.textContent = "Done";
-                    GAMESTATE.currentState = states.PAUSE
+                    GAMESTATE.currentState = states.START
                 }
             }, 1000)
-        }
-        // Stops space from scrolling
-        if (event.keyCode === 32 && event.target === document.body) {
-            event.preventDefault();
-        }
-
-        // Stops tab from selecting off screen
-        if (event.keyCode === 9 && event.target === document.body) {
-            event.preventDefault();
-        }
-
-        if (GAMESTATE.timeLeft > 0 && GAMESTATE.currentState === states.PAUSE) {
-            GAMESTATE.currentState = states.INPROGRESS
         }
 
         if (GAMESTATE.currentState === states.INPROGRESS) {
@@ -109,8 +100,15 @@ async function main() {
             letterNode[GAMESTATE.count].classList.add("letter-block")
         }
 
-        if (GAMESTATE.currentState === states.PAUSE && event.keyCode === 13) {
-            GAMESTATE.timeLeft = TIMER
+
+        // Stops space from scrolling
+        if (event.keyCode === 32 && event.target === document.body) {
+            event.preventDefault();
+        }
+
+        // Stops tab from selecting off screen
+        if (event.keyCode === 9 && event.target === document.body) {
+            event.preventDefault();
             sentence = newSentence(redditPosts)
             renderGame(sentence, game)
         }
