@@ -2,10 +2,33 @@ html {
     background-color: rgb(12, 23, 15);
 }
 
-.title {
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgba(189, 190, 142, 0.495);
+}
+
+a:visited {
+    color: rgba(189, 190, 142, 0.495);
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    column-gap: 60px;
+}
+
+.nav-logo {
     color: rgba(230, 209, 102, 0.9);
     font-size: 3rem;
     font-family: "EB Garamond", serif;
+}
+
+.nav-item {
+    color: rgba(189, 190, 142, 0.495);
+    font-size: 2rem;
 }
 
 .game-container {
@@ -42,7 +65,8 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
+    width: 0;
+    /* Remove scrollbar space */
 }
 
 .starting-letter-block {
@@ -83,6 +107,7 @@ html {
 }
 
 @media only screen and (max-width: 900px) {
+
     /* CSS rules for phone screens go here */
     .game-container {
         margin-left: 5%;
@@ -97,7 +122,27 @@ html {
     justify-content: center;
 }
 
-.fuzzy-search-bar {
-    width: 60%;
-
+.fuzzy-search-container {
+    margin-top: 5%;
 }
+
+.fuzzy-search-bar {
+    background: transparent;
+    /* color: rgb(230, 209, 102); */
+    color: rgb(189, 190, 142);
+    font-size: 2rem;
+    border-color: rgba(189, 190, 142, 0.495);
+    border-style: solid;
+    border-radius: 40px;
+    width: 60%;
+    height: 3rem;
+    text-indent: 40px;
+}
+
+.fuzzy-search-bar:focus {
+    outline: none; /* Remove the default outline */
+}
+
+::placeholder {
+    color: rgba(189, 190, 142, 0.196);
+  }
