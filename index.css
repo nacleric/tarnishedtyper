@@ -29,6 +29,10 @@ html {
     padding-right: 10px;
 }
 
+#timer {
+    width: 70px;
+}
+
 #game {
     font-family: "Noto Sans Mono", monospace;
     font-size: 2rem;

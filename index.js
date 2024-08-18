@@ -1,5 +1,4 @@
-let TIMER = 5
-let timerInterval;
+let TIMER = 30
 
 let states = {
     START: "START",
@@ -35,7 +34,7 @@ function newSentence(redditPosts) {
     return redditPosts[randomInt].text
 }
 
-function renderGame(sentence, gameEl) {
+function restartGame(sentence, gameEl) {
     gameEl.innerHTML = wrapLettersInSpan(sentence)
     GAMESTATE.timeLeft = TIMER
     GAMESTATE.keyFired = false
@@ -51,6 +50,7 @@ async function main() {
 
     // let total_words = sentence.split(' ').filter(word => word.length > 0).length
 
+    let timerInterval;
     let timerEl = document.getElementById("timer")
 
     let game = document.getElementById("game")
@@ -68,10 +68,6 @@ async function main() {
             GAMESTATE.keyFired = true
             GAMESTATE.currentState = states.INPROGRESS
 
-            // Clear any existing interval
-            if (timerInterval) {
-                clearInterval(timerInterval);
-            }
             timerInterval = setInterval(() => {
                 GAMESTATE.timeLeft--;
                 timerEl.textContent = GAMESTATE.timeLeft;
@@ -117,7 +113,13 @@ async function main() {
         if (event.keyCode === 9 && event.target === document.body) {
             event.preventDefault();
             sentence = newSentence(redditPosts)
-            renderGame(sentence, game)
+            restartGame(sentence, game)
+            timerEl.textContent = TIMER;
+
+            // Clear any existing interval
+            if (timerInterval) {
+                clearInterval(timerInterval);
+            }
         }
     });
 }
