@@ -126,7 +126,7 @@ nav {
     margin-top: 5%;
 }
 
-.fuzzy-search-bar {
+#fuzzy-search-bar {
     background: transparent;
     /* color: rgb(230, 209, 102); */
     color: rgb(189, 190, 142);

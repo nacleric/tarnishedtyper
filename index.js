@@ -60,7 +60,7 @@ async function main() {
     let letterNode = game.childNodes
     letterNode[GAMESTATE.count].classList.add("starting-letter-block")
 
-    document.addEventListener('keydown', function (event) {
+    document.addEventListener("keydown", function (event) {
         let key = event.key
 
         // Start timer
