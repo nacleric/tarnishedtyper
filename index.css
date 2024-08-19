@@ -139,10 +139,10 @@ nav {
     text-indent: 40px;
 }
 
-.fuzzy-search-bar:focus {
-    outline: none; /* Remove the default outline */
+input:focus{
+    outline: none;
 }
 
 ::placeholder {
     color: rgba(189, 190, 142, 0.196);
-  }
+}

@@ -46,6 +46,7 @@ function fuzzySearchTags(query, items) {
 
 async function main() {
     let searchbar = document.getElementById("fuzzy-search-bar")
+    let autocomplete = document.getElementById('autocomplete-list');
     let redditposts = await fetchData();
     let cache = createCache(redditposts);
 

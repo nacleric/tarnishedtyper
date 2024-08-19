@@ -72,7 +72,7 @@ async function main() {
                 GAMESTATE.timeLeft--;
                 timerEl.textContent = GAMESTATE.timeLeft;
                 if (GAMESTATE.timeLeft <= 0) {
-                    clearInterval(timerInterval) // stops timer
+                    clearInterval(timerInterval)
                     timerEl.textContent = "Done";
                     GAMESTATE.currentState = states.START
                 }
