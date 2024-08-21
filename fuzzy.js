@@ -44,9 +44,20 @@ function fuzzySearchTags(query, items) {
     return foo
 }
 
+function renderBox(tags, author, text) {
+    let str = `
+        <div class="lore-card">
+            <div class="lore-tags"></div>
+            <div class="lore-text"></div>
+            <div class="lore-author"></div>
+        </div>
+    `
+    return "<div>hello</div>"
+}
+
 async function main() {
     let searchbar = document.getElementById("fuzzy-search-bar")
-    let autocomplete = document.getElementById('autocomplete-list');
+    let autocomplete = document.getElementById("autocomplete-list");
     let redditposts = await fetchData();
     let cache = createCache(redditposts);
 

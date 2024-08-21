@@ -120,6 +120,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .fuzzy-search-container {
@@ -145,4 +146,33 @@ input:focus{
 
 ::placeholder {
     color: rgba(189, 190, 142, 0.196);
+}
+
+.lore-card {
+    font-family: "Noto Sans Mono", monospace;
+    padding: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: rgba(189, 190, 142, 0.251);
+    border-radius: 8px;
+    margin-top: 1rem;
+    width: 60%;
+    height: 128px;
+    border: 2px solid ; /* Add an outline/border */
+}
+
+.lore-meta-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lore-tags {
+    font-size: 1rem;
+}
+
+.lore-text {
+    padding-top: 1.5rem;
+    font-size: 1rem;
 }
