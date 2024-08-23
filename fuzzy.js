@@ -44,23 +44,25 @@ function fuzzySearchTags(query, items) {
     return foo
 }
 
-function renderCard(tags, author, text) {
+function createCardEl(tags, author, text, link) {
     let ftags = ""
     for (let i = 0; i < tags.length; i++) {
         ftags += `#${tags[i]} `
     }
-    let foo = text.substring(0, 400);
+    let textTrunc = text.substring(0, 400);
 
-    let str = `
-        <div class="lore-card">
-            <div class="lore-meta-data">
-                <div class="lore-tags">${ftags}</div>
-                <div class="lore-author">By: ${author}</div>
+    let el = `
+        <a href="${link}" class="center">
+            <div class="lore-card">
+                <div class="lore-meta-data">
+                    <div class="lore-tags">${ftags}</div>
+                    <div class="lore-author">By: ${author}</div>
+                </div>
+                <div class="lore-text">${textTrunc}...(view more)</div>
             </div>
-            <div class="lore-text">${foo}...(view more)</div>
-        </div>
+        </a>
     `
-    return str
+    return el
 }
 
 async function main() {
@@ -70,7 +72,7 @@ async function main() {
     let cache = createCache(redditposts);
     for (let i = 0; i < redditposts.length; i++) {
         let r = redditposts[i]
-        cardList.innerHTML += renderCard(r.tags, r.author, r.text)
+        cardList.innerHTML += createCardEl(r.tags, r.author, r.text, r.link)
     }
 
 
@@ -80,7 +82,7 @@ async function main() {
         cardList.innerHTML = ""
         for (let i = 0; i < searchResults.length; i++) {
             let r = searchResults[i]
-            cardList.innerHTML += renderCard(r.tags, r.author, r.text)
+            cardList.innerHTML += createCardEl(r.tags, r.author, r.text, r.link)
         }
     });
 }
