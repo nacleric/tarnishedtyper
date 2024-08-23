@@ -44,22 +44,35 @@ function fuzzySearchTags(query, items) {
     return foo
 }
 
-function renderBox(tags, author, text) {
+function renderCard(tags, author, text) {
+    let ftags = ""
+    for (let i = 0; i < tags.length; i++) {
+        ftags += `#${tags[i]} `
+    }
+
     let str = `
         <div class="lore-card">
-            <div class="lore-tags"></div>
-            <div class="lore-text"></div>
-            <div class="lore-author"></div>
+            <div class="lore-meta-data">
+                <div class="lore-tags">${ftags}</div>
+                <div class="lore-author">Author: ${author}</div>
+            </div>
+            <div class="lore-text">${text}</div>
         </div>
     `
-    return "<div>hello</div>"
+    return str
 }
 
 async function main() {
     let searchbar = document.getElementById("fuzzy-search-bar")
-    let autocomplete = document.getElementById("autocomplete-list");
+    let cardList = document.getElementById("fuzzy-search-container")
     let redditposts = await fetchData();
     let cache = createCache(redditposts);
+    for (let i = 0; i < redditposts.length; i++) {
+        let r = redditposts[i]
+        cardList.innerHTML += renderCard(r.tags, r.author, r.text)
+    }
+    console.log(redditposts)
+    console.log(cache)
 
     searchbar.addEventListener("keydown", function () {
         // console.log(searchbar.value)

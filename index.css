@@ -123,7 +123,7 @@ nav {
     flex-direction: column;
 }
 
-.fuzzy-search-container {
+#fuzzy-search-container {
     margin-top: 5%;
 }
 
@@ -132,7 +132,7 @@ nav {
     /* color: rgb(230, 209, 102); */
     color: rgb(189, 190, 142);
     font-size: 2rem;
-    border-color: rgba(189, 190, 142, 0.495);
+    border-color: rgba(189, 190, 142, 0.547);
     border-style: solid;
     border-radius: 40px;
     width: 60%;
@@ -145,7 +145,7 @@ input:focus{
 }
 
 ::placeholder {
-    color: rgba(189, 190, 142, 0.196);
+    color: rgba(187, 188, 151, 0.4);
 }
 
 .lore-card {
@@ -155,7 +155,7 @@ input:focus{
     padding-right: 1rem;
     display: flex;
     flex-direction: column;
-    color: rgba(189, 190, 142, 0.251);
+    color: rgba(189, 190, 142, 0.656);
     border-radius: 8px;
     margin-top: 1rem;
     width: 60%;
