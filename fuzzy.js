@@ -49,14 +49,15 @@ function renderCard(tags, author, text) {
     for (let i = 0; i < tags.length; i++) {
         ftags += `#${tags[i]} `
     }
+    let foo = text.substring(0, 400);
 
     let str = `
         <div class="lore-card">
             <div class="lore-meta-data">
                 <div class="lore-tags">${ftags}</div>
-                <div class="lore-author">Author: ${author}</div>
+                <div class="lore-author">By: ${author}</div>
             </div>
-            <div class="lore-text">${text}</div>
+            <div class="lore-text">${foo}...(view more)</div>
         </div>
     `
     return str
@@ -71,18 +72,17 @@ async function main() {
         let r = redditposts[i]
         cardList.innerHTML += renderCard(r.tags, r.author, r.text)
     }
-    console.log(redditposts)
-    console.log(cache)
+
 
     searchbar.addEventListener("keydown", function () {
-        // console.log(searchbar.value)
-        // console.log(fuzzySearchTags(searchbar.value, cache))
         let tags = fuzzySearchTags(searchbar.value, cache)
-        let uniqRes = queryResults(redditposts, cache, tags);
-        console.log(uniqRes)
+        let searchResults = queryResults(redditposts, cache, tags);
+        cardList.innerHTML = ""
+        for (let i = 0; i < searchResults.length; i++) {
+            let r = searchResults[i]
+            cardList.innerHTML += renderCard(r.tags, r.author, r.text)
+        }
     });
 }
-
-
 
 main()
