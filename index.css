@@ -139,12 +139,16 @@ nav {
     text-indent: 40px;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
 ::placeholder {
     color: rgba(187, 188, 151, 0.2);
+}
+
+.lore-card-width {
+    width: 70%;
 }
 
 .lore-card {
@@ -157,10 +161,14 @@ input:focus{
     color: rgba(189, 190, 142, 0.656);
     border-radius: 8px;
     margin-top: 1rem;
-    width: 60%;
     min-height: 128px;
-    border: 2px solid ; /* Add an outline/border */
+    border: 2px solid;
+    transition: transform .1s; /* Animation */
 }
+
+.lore-card:hover {
+    transform: scale(1.025); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 .lore-meta-data {
     display: flex;

@@ -49,10 +49,10 @@ function createCardEl(tags, author, text, link) {
     for (let i = 0; i < tags.length; i++) {
         ftags += `#${tags[i]} `
     }
-    let textTrunc = text.substring(0, 400);
+    let textTrunc = text.substring(0, 500);
 
     let el = `
-        <a href="${link}" class="center">
+        <a href="${link}" class="center lore-card-width">
             <div class="lore-card">
                 <div class="lore-meta-data">
                     <div class="lore-tags">${ftags}</div>
@@ -82,7 +82,7 @@ async function main() {
         cardList.innerHTML = ""
         for (let i = 0; i < searchResults.length; i++) {
             let r = searchResults[i]
-            cardList.innerHTML += createCardEl(r.tags, r.author, r.text, r.link)
+            cardList.innerHTML += createCardEl(r.tags, r.author, r.text)
         }
     });
 }
