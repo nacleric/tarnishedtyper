@@ -93,9 +93,10 @@ nav {
 }
 
 .reset {
-    padding-top: 1rem;
+    padding-top: 2rem;
     font-family: "Noto Sans Mono", monospace;
-    color: rgba(189, 190, 142, 0.241);
+    font-size: 1.25rem;
+    color: rgba(189, 190, 142, 0.312);
 }
 
 @keyframes blink {
