@@ -92,6 +92,12 @@ nav {
     color: rgb(139, 70, 63);
 }
 
+.reset {
+    padding-top: 1rem;
+    font-family: "Noto Sans Mono", monospace;
+    color: rgba(189, 190, 142, 0.241);
+}
+
 @keyframes blink {
     0% {
         background-color: rgb(66, 70, 144);

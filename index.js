@@ -44,14 +44,40 @@ function restartGame(sentence, gameEl) {
     letterNode[0].classList.add("starting-letter-block")
 }
 
+function calculateWPM(game) {
+    // console.log(game.childNodes)
+    let nodes = game.childNodes
+    let correct = 0
+    let incorrect = 0
+    for (let i = 0; i < nodes.length; i++) {
+        if (nodes[i].className.includes("letter-correct")) {
+            correct += 1
+        } else if (nodes[i].className.includes("letter-wrong")) {
+            incorrect += 0
+        }
+    }
+    let per_min_scale = 60 / TIMER
+    let wpm = correct / 5 * per_min_scale
+
+    let res = {
+        correct: correct,
+        incorrect: incorrect,
+        wpm: Math.ceil(wpm)
+    }
+
+    return res
+}
+
 async function main() {
     let redditPosts = await fetchData();
     let sentence = newSentence(redditPosts)
 
     // let total_words = sentence.split(' ').filter(word => word.length > 0).length
+    // console.log(total_words)
 
     let timerInterval;
     let timerEl = document.getElementById("timer")
+    let wpmEl = document.getElementById("wpm")
 
     let game = document.getElementById("game")
 
@@ -59,7 +85,6 @@ async function main() {
 
     let letterNode = game.childNodes
     letterNode[GAMESTATE.count].classList.add("starting-letter-block")
-
     document.addEventListener("keydown", function (event) {
         let key = event.key
 
@@ -75,6 +100,9 @@ async function main() {
                     clearInterval(timerInterval)
                     timerEl.textContent = "Done";
                     GAMESTATE.currentState = states.START
+                    let score = calculateWPM(game).wpm
+                    console.log(score)
+                    wpmEl.textContent = String(score)
                 }
             }, 1000)
         }
