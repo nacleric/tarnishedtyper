@@ -86,19 +86,6 @@ async function main() {
     let letterNode = game.childNodes
     letterNode[GAMESTATE.count].classList.add("starting-letter-block")
 
-    game.addEventListener('input', (e) => {
-        e.preventDefault();
-    });
-
-    // Prevent key presses from modifying the content
-    game.addEventListener('keydown', (e) => {
-        e.preventDefault();
-    });
-
-    game.addEventListener('keypress', (e) => {
-        e.preventDefault();
-    });
-
     document.addEventListener("keydown", function (event) {
         let key = event.key
 
@@ -164,6 +151,23 @@ async function main() {
             }
         }
     });
+
+        // game.addEventListener('input', (e) => {
+        //     e.preventDefault();
+        // });
+
+        // // Prevent key presses from modifying the content
+        // game.addEventListener('keydown', (e) => {
+        //     e.preventDefault();
+        // });
+
+        // game.addEventListener('keypress', (e) => {
+        //     e.preventDefault();
+        // });
+
+    game.addEventListener("mousedown", event => {event.preventDefault(); event.stopPropagation()});
+
+
 }
 
 main()
