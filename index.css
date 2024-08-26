@@ -83,7 +83,6 @@ nav {
 }
 
 .letter-correct {
-    /* color: rgb(163,166,74); */
     color: rgb(230, 209, 102);
     text-shadow: rgb(255, 132, 0) 1px 0 10px;
 }
@@ -113,15 +112,6 @@ nav {
     }
 }
 
-@media only screen and (max-width: 900px) {
-
-    /* CSS rules for phone screens go here */
-    .game-container {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 10%
-    }
-}
 
 .center {
     display: flex;
@@ -143,7 +133,7 @@ nav {
     border-radius: 40px;
     width: 60%;
     height: 3rem;
-    text-indent: 40px;
+    text-indent: 3rem;
 }
 
 input:focus {
@@ -175,7 +165,7 @@ input:focus {
 
 .lore-card:hover {
     transform: scale(1.025); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+}
 
 .lore-meta-data {
     display: flex;
@@ -189,4 +179,23 @@ input:focus {
 .lore-text {
     padding-top: .5rem;
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+
+    /* CSS rules for phone screens go here */
+    .game-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%
+    }
+
+    #fuzzy-search-bar {
+        text-indent: 1rem;
+        width: 90%;
+    }
+
+    .lore-card-width {
+        width: 90%;
+    }
 }
