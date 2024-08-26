@@ -62,6 +62,10 @@ nav {
     color: rgba(189, 190, 142, 0.495);
     height: 400px;
     overflow-y: scroll;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+/Edge */
 }
 
 #game:focus {
