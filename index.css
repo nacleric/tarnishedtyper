@@ -63,9 +63,6 @@ nav {
     height: 400px;
     overflow-y: scroll;
     caret-color: transparent; /* Hides the cursor */
-    color: transparent;       /* Hides the text */
-    background-color: transparent; /* Hides the background */
-    border: none;             /* Removes borders */
 }
 
 #game:focus {
