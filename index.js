@@ -86,12 +86,17 @@ async function main() {
     let letterNode = game.childNodes
     letterNode[GAMESTATE.count].classList.add("starting-letter-block")
 
-    game.addEventListener("focus", () => {
-        // Trigger the keyboard when the div is focused
-        game.blur();
-        setTimeout(() => {
-            game.focus();
-        }, 10);
+    game.addEventListener('input', (e) => {
+        e.preventDefault();
+    });
+
+    // Prevent key presses from modifying the content
+    game.addEventListener('keydown', (e) => {
+        e.preventDefault();
+    });
+
+    game.addEventListener('keypress', (e) => {
+        e.preventDefault();
     });
 
     document.addEventListener("keydown", function (event) {
