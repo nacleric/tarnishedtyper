@@ -64,6 +64,11 @@ nav {
     overflow-y: scroll;
 }
 
+#game:focus {
+    outline: none;
+    cursor: none;
+}
+
 ::-webkit-scrollbar {
     width: 0;
     /* Remove scrollbar space */
