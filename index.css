@@ -97,11 +97,15 @@ nav {
     color: rgb(139, 70, 63);
 }
 
-.reset {
+#reset {
     padding-top: 2rem;
     font-family: "Noto Sans Mono", monospace;
     font-size: 1.25rem;
     color: rgba(189, 190, 142, 0.312);
+}
+
+#reset:hover {
+    cursor: pointer
 }
 
 @keyframes blink {

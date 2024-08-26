@@ -74,7 +74,6 @@ async function main() {
         cardList.innerHTML += createCardEl(r.tags, r.author, r.text, r.link)
     }
 
-
     searchbar.addEventListener("keydown", function () {
         let tags = fuzzySearchTags(searchbar.value, cache)
         let searchResults = queryResults(redditposts, cache, tags);

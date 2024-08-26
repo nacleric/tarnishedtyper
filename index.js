@@ -80,6 +80,7 @@ async function main() {
     let wpmEl = document.getElementById("wpm")
 
     let game = document.getElementById("game")
+    let reset = document.getElementById("reset")
 
     game.innerHTML = wrapLettersInSpan(sentence)
 
@@ -152,21 +153,11 @@ async function main() {
         }
     });
 
-        // game.addEventListener('input', (e) => {
-        //     e.preventDefault();
-        // });
-
-        // // Prevent key presses from modifying the content
-        // game.addEventListener('keydown', (e) => {
-        //     e.preventDefault();
-        // });
-
-        // game.addEventListener('keypress', (e) => {
-        //     e.preventDefault();
-        // });
-
     game.addEventListener("mousedown", event => {event.preventDefault(); event.stopPropagation()});
-
+    reset.addEventListener("mousedown", _ => {
+        sentence = newSentence(redditPosts)
+        restartGame(sentence, game)
+    });
 
 }
 
