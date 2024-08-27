@@ -1,11 +1,11 @@
-    {
-        "id": ,
-        "author": "",
-        "link": "",
-        "text": "",
-        "tags": ["three_fingers", "merchants", "frenzied_flame"]
-    }
+# T-Shirt Company
 
+Reddit sometimes inserts special characters:
+
+'''
 “”
 ’
 …
+'''
+
+Need to find fix for mobile
