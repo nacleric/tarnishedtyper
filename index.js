@@ -157,6 +157,12 @@ async function main() {
     reset.addEventListener("mousedown", _ => {
         sentence = newSentence(redditPosts)
         restartGame(sentence, game)
+        timerEl.textContent = TIMER;
+
+        // Clear any existing interval
+        if (timerInterval) {
+            clearInterval(timerInterval);
+        }
     });
 
 }
